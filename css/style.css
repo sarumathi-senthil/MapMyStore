@@ -537,6 +537,9 @@ h6,
     }
   }
 
+  
+
+  
 #home_name{
     font-family: "Rubik Moonrocks";
   font-weight: 400;
@@ -579,14 +582,60 @@ h6,
   }
 
   .parallax-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.579)), url('../img/samplebg.jpg');
-    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.579)), url('../img/samplebg2.jpg');
+    min-height: 100vh;
     background-attachment: fixed; /* 💥 The key line */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
-    color: white;
+    
   }
-  
+
+
+  .whychooseus{
+    color:rgb(255, 255, 255);
+
+  }
+
+  .chooseusdesc{
+    color:#f0f6ffcd;
+  }
+
+
+  @media screen and (min-width: 800px) and (max-width: 1400px) and (orientation: landscape)  {
+    #home_name {
+        font-size: 100px;
+        
+      }
+    
+      #tag_line {
+        font-size: 25px;
+        
+      }
+    
+      .placeholder-box {
+        min-height: 630px;
+      }
+
+      .parallax-section{
+        min-height: 70vh;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #home_name {
+        font-size: 70px;
+        text-align: center;
+      }
+    
+      #tag_line {
+        font-size: 22px;
+        text-align: center;
+      }
+    
+      .placeholder-box {
+        min-height: 800px;
+      }
+  }
