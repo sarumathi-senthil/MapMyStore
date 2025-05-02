@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #4294E3;
-    --secondary: #8F12FD;
+    --primary: #6912b5;
+    --secondary:#a75ce4 ;
     --light: #F0F6FF;
     --dark: #262B47;
 }
@@ -541,7 +541,7 @@ h6,
 
   
 #home_name{
-    font-family: "Rubik Moonrocks";
+    font-family: "Matemasie";
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
@@ -568,7 +568,7 @@ h6,
     border-radius: 25px;
     max-width: 100%;  /* or 60%, 50%, etc. */
     height: auto;
-    box-shadow: 0 0 20px rgba(0, 174, 255, 0.8);
+    box-shadow: 0 0 20px rgba(115, 0, 255, 0.8);
     transition: all 0.3s ease-in-out;
     border-radius: 15px;
   margin-left: auto;
@@ -577,7 +577,7 @@ h6,
   }
   
   .img-glow:hover {
-    box-shadow: 0 0 35px rgba(98, 0, 255, 0.6);
+    box-shadow: 0 0 35px rgb(3, 144, 196);
     transform: scale(1.05);
   }
 
@@ -594,19 +594,16 @@ h6,
   }
 
 
-  .whychooseus{
-    color:rgb(255, 255, 255);
-
-  }
-
-  .chooseusdesc{
-    color:#f0f6ffcd;
-  }
-
-
-  @media screen and (min-width: 800px) and (max-width: 1400px) and (orientation: landscape)  {
+  /* @media (max-width: 1400px) {
     #home_name {
-        font-size: 100px;
+        font-size: 1000px;
+        
+      }
+  } */
+
+  @media (max-width: 1400px){
+    #home_name {
+        font-size: 80px;
         
       }
     
@@ -620,11 +617,12 @@ h6,
       }
 
       .parallax-section{
-        min-height: 70vh;
+        min-height: 10vh;
+        background-attachment: scroll;
       }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     #home_name {
         font-size: 70px;
         text-align: center;
@@ -636,6 +634,73 @@ h6,
       }
     
       .placeholder-box {
-        min-height: 800px;
+        min-height: 100px;
       }
+  } */
+
+  .parallax-text{
+    color:white;
+  }
+
+
+  .highlight{
+    color:rgb(121, 119, 119);
+    font-weight: 700;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+
+  .glass-card {
+    backdrop-filter: blur(12px);
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    max-height:120px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    z-index: -1;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    padding: 1px;
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+            mask-composite: exclude;
+  }
+  .glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .glass-icon {
+    background-color: #7e2df0;
+    color: #fff;
+    font-size: 1.75rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  .choosesection{
+    /* background: linear-gradient(135deg, #5D67EC, #7934F4); */
+    min-height: auto;
+    padding: 3rem 0;
   }
